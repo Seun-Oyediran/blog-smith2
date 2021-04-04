@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+
+p{
+    font-size: 1em;
+    line-height: 1.75;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex-page{
+    display: flex;
+    min-width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 1); */
+}
+
+.bg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* z-index: 1; */
+    background: url('/images/pexels-bich-tran-669996.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg::after{
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.container{
+    max-width: 700px;
+    padding: 5rem 4rem;
+    position: relative;
+    z-index: 3;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.links-con{
+    margin: 0 -0.75rem;
+}
+
+.links{
+    display: inline-block;
+    color: #FFFFFF;
+    border: solid 1px #FFFFFF;
+    margin: 0.75rem;
+    padding: 0.7rem 1.75rem;
+    transition: all 0.3s ease;
+}
+
+.links:hover{
+    color: #FF828A !important;
+    border-color: #FF828A !important;
+}
+
+.img-con{
+    margin: 1rem 0;
+}
+.img-con img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.left-space{
+    padding-left: 1.5rem;
+    list-style: decimal;
+}
+
+.no-decimal{
+    list-style: circle;
+}
+
+.left-space li{
+    padding: 0.5rem 0;
+}
+
+
+
+.section-title{
+    margin: 2rem 0 1rem 0;
+}
+
+.input-con{
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.input-con input, .input-con textarea{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    font-size: 15px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.input-con textarea{
+    resize: none;
+    height: 200px;
+}
+
+.submit-con{
+    margin: 0 -0.75rem;
+}
+
+.submit-con button{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+@media(max-width: 800px){
+    .container{
+        padding: 4rem 2rem;
+    }
+}
+
+
+@media(max-width: 500px){
+    .container{
+        padding: 3rem 1rem;
+    }
+    p, ul{
+        font-size: 0.85em;
+    }
+}
