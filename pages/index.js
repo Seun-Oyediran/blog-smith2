@@ -8,7 +8,7 @@ const links = [
   {name: 'Who We Are', route: '/who'},
   {name: 'How We Help', route: '/help'},
   {name: 'How We Work', route: '/work'},
-  {name: 'Contact', route: '/contact'},
+  {name: 'Contact Us', route: '/contact'},
 ]
 
 
@@ -18,10 +18,9 @@ export default function Home() {
     <>
     <Header title='Home' />
     <Background>
-      <h1 >The Blog Smith</h1>
+      <h1 >The Copy Smith</h1>
       <br/>
-        <h2>We make things happen</h2>
-      <p>7 seconds. This is all the time you have to get the attention of prospects on your website, sales page or whatever marketing tool you use. Seems impossible , we know but let us show you how we do it.</p>
+      <p className='homescreen'>7 seconds. This is all the time you have to get the attention of prospects on your website, sales page or whatever marketing tool you use. Seems impossible , we know but let us show you how we do it.</p>
       <ul className='links-con'>
         {links.map((item, index)=>(
           <Link href={item.route} key={index}>

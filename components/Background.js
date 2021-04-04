@@ -22,8 +22,9 @@ const variants ={
 
 const Background = ({children}) => {
     return (
+        <>
         <div className="flex-page">
-            <div className="bg"></div>
+            
             <motion.div className="container"
             variants={variants}
             initial='initial'
@@ -34,7 +35,8 @@ const Background = ({children}) => {
             </motion.div>
             
         </div>
-        
+        <div className="bg"></div>
+        </>
     )
 }
 

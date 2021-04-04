@@ -6,11 +6,11 @@ import { useRouter } from 'next/router'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
-  console.log(router);
+
   return (
     <AnimatePresence exitBeforeEnter>
         <motion.div key={router.route}
-        
+        style={{padding: 0, margin: 0}}
         >
           <Component {...pageProps} />
         </motion.div>
