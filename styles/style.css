@@ -10,11 +10,11 @@
 html {
     overflow: hidden;
     height: 100%;
-}
-
-body {
-    overflow: auto;
-    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 
@@ -38,7 +38,7 @@ a{
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     /* background-color: rgba(0, 0, 0, 1); */
 }
 
@@ -73,9 +73,16 @@ a{
     position: relative;
     z-index: 3;
     font-family: 'Source Code Pro', monospace;
+    overflow: auto;
 }
 
 .links-con{
+    margin: 0 -0.75rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+}
+
+.links-con1{
     margin: 0 -0.75rem;
 }
 
@@ -86,6 +93,12 @@ a{
     margin: 0.75rem;
     padding: 0.7rem 1.8rem;
     transition: all 0.3s ease;
+    text-align: center;
+}
+
+.form-links{
+    font-size: 17px;
+    letter-spacing: 1px;
 }
 
 .links:hover{
@@ -157,6 +170,14 @@ a{
     font-weight: 600;
 }
 
+.owl-dot span{
+    background-color: rgba(255,255,255,0.4) !important;
+}
+
+.active span{
+    background-color: white  !important;
+}
+
 
 @media(max-width: 800px){
     .container{
@@ -182,5 +203,12 @@ a{
     .homescreen{
         font-size: 19px;
         font-weight: 600;
+    }
+    .links-con{
+        grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+        font-size: 15px;
+    }
+    .download-link{
+        width: 100%;
     }
 }

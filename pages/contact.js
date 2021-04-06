@@ -49,11 +49,14 @@ const contact = () => {
                             <textarea ref={message} name="message"  ></textarea>
                         </div>
                         <div className="submit-con">
-                            <button className='links' type="submit">Submit</button>
-                            <button className='links' onClick={clearInput}>Clear</button>
+                            <button className='links form-links' type="submit">Submit</button>
+                            <button className='links form-links' onClick={clearInput}>Clear</button>
                         </div>
                     </form>
                 </div>
+                <script>
+                    console.log(123);
+                </script>
             </Background>
         </>
     )

@@ -8,6 +8,7 @@ const links = [
   {name: 'Who We Are', route: '/who'},
   {name: 'How We Help', route: '/help'},
   {name: 'How We Work', route: '/work'},
+  {name: 'Portfolio', route: '/portfolio'},
   {name: 'Contact Us', route: '/contact'},
 ]
 
