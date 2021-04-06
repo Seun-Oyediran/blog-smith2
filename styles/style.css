@@ -179,6 +179,26 @@ a{
 }
 
 
+.social{
+    margin: 0 -0.5rem;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.social-link{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255,255,255,0.4);
+    margin: 0 0.5rem;
+    overflow: hidden;
+}
+
+
 @media(max-width: 800px){
     .container{
         padding: 4rem 2rem;
