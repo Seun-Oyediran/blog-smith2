@@ -19,7 +19,7 @@ const portfolio = () => {
                     <img src="/images/1st slide.png" alt="Our Portfolio"/>
                 </div>
                 <p>We go add logos of brands we have worked with ( Turks and Creative, digita, cryptobonanzas)</p>
-                <OwlCarousel className='owl-theme' items={1} margin={10} loop >
+                <OwlCarousel className='owl-theme' items={1} margin={10} loop autoHeightClass={'owl-height'} lazyLoad nav >
                     <div className="img-con">
                     <h3 style={{textAlign: 'center'}}>Turks and Creative</h3>
                     <br/>
